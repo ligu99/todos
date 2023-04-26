@@ -105,7 +105,16 @@ export default {
         this.visibility = 'all'
       }
     }
-  }
+  },
+  directives: {
+    "todo-focus": {
+      inserted:function(el, binding) {
+        if (binding.value) {
+          el.focus();
+        }
+      }
+    }
+  },
 }
 </script>
 
@@ -147,6 +156,7 @@ export default {
             class="edit"
             type="text"
             v-model="todo.title"
+            v-todo-focus="todo === editedTodo"
             @vnode-mounted="({ el }) => el.focus()"
             @blur="doneEdit(todo)"
             @keyup.enter="doneEdit(todo)"

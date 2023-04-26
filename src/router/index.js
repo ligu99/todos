@@ -12,17 +12,17 @@ const routes = [
   },
   {
     path: '/all',
-    name: 'Home',
+    name: 'all',
     component: Home
   },
   {
     path: '/active',
-    name: 'Home',
+    name: 'active',
     component: Home
   },
   {
     path: '/completed',
-    name: 'Home',
+    name: 'completed',
     component: Home
   }
 ]
