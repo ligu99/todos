@@ -83,7 +83,9 @@ export default {
       if (!todo.title) {
         this.removeTodo(todo)
       }else{
-        this.saveToDB(todo.title)
+        if(this.beforeEditCache !== todo.title){
+          this.saveToDB(todo.title)
+        }
       }
     },
 
