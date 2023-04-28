@@ -133,14 +133,15 @@ export default {
       >
     </header>
     <section class="main" v-show="todos.length">
-      <input
+      <!-- <input
         id="toggle-all"
         class="toggle-all"
         type="checkbox"
         :checked="remaining === 0"
         @change="toggleAll"
-      >
-      <label for="toggle-all">Mark all as complete</label>
+      > -->
+      <!-- <label for="toggle-all">Mark all as complete</label> -->
+      <i class="ticon">T</i>
       <ul class="todo-list">
         <li
           v-for="todo in filteredTodos"

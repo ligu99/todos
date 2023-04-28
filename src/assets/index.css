@@ -148,6 +148,21 @@ body {
 .toggle-all:checked + label:before {
 	color: #484848;
 }
+.ticon{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: -48px;
+	left: 20px;
+	font-size: 24px;
+	opacity: 0.5;
+	display: inline-block;
+	border: 1px #777777 solid;
+	border-radius: 50%;
+	padding-left: 5px;
+	line-height: 30px;
+	box-sizing: border-box;
+}
 
 .todo-list {
 	margin: 0;
