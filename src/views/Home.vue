@@ -351,7 +351,7 @@ export default {
 }
 .tag-menu-box{
   position: fixed;
-  right: 0px;
+  right: calc(50% - 400px);
   top: 100px;
   h4{
     margin: 0px 0px;
@@ -360,8 +360,7 @@ export default {
     padding-bottom: 10px;
   }
   .menu-item{
-    border-right:none;
-    border-radius:10px 0px 0px 10px;
+    border-radius:10px;
   }
 }
 </style>

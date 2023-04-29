@@ -185,43 +185,7 @@ export default {
 .filters {
   color: #777777;
 }
-.tag-menu-box,.left-menu-box{
-  h4{
-    margin: 0px 0px;
-    padding-left:18px;
-    padding-bottom: 10px;
-  }
-  .menu-item{
-    width: 80px;
-    border: 1px solid #e6e6e6;
-    div{
-      padding: 8px 0px;
-      text-align: center;
-      cursor: pointer;
-    }
-  }
-  .active{
-    background: rgba(0, 0, 0, .04);
-  }
-}
-.left-menu-box{
-  position: fixed;
-  left: 0px;
-  top: 100px;
-  .menu-item{
-    border-left:none;
-    border-radius:0px 10px 10px 0px;
-  }
-}
-.tag-menu-box{
-  position: fixed;
-  right: 0px;
-  top: 100px;
-  .menu-item{
-    border-right:none;
-    border-radius:10px 0px 0px 10px;
-  }
-}
+
 .tagicon{
     position: absolute;
     width: 50px;
