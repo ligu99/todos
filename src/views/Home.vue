@@ -308,13 +308,16 @@ export default {
   width: 84px;
   height: 32px;
   border: 1px solid rgba(175, 47, 47, 0.2);
-  color: #777777;
+  color: rgba(0, 0, 0, 0.4);
   outline: unset;
   max-height: 280px;
   position: absolute;
   top: 20px;
   right: 65px;
   cursor: pointer;
+  option{
+    color: #777777;
+  }
 }
 .tag-menu-box,.left-menu-box{
   .menu-item{
