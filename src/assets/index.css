@@ -26,7 +26,7 @@ body {
 	background: #f5f5f5;
 	color: #111111;
 	min-width: 230px;
-	max-width: 550px;
+	max-width: 600px;
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -81,6 +81,9 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+.header{
+	position: relative;
+}
 .new-todo,
 .edit {
 	position: relative;
@@ -97,6 +100,7 @@ body {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	max-width: 450px;
 }
 
 .new-todo {
@@ -152,16 +156,26 @@ body {
 	position: absolute;
 	width: 30px;
 	height: 30px;
-	top: -48px;
-	left: 20px;
+	top: 18px;
+	left: 18px;
 	font-size: 24px;
 	opacity: 0.5;
 	display: inline-block;
 	border: 1px #777777 solid;
 	border-radius: 50%;
-	padding-left: 5px;
+	padding-left: 7px;
 	line-height: 30px;
 	box-sizing: border-box;
+}
+.add-btn{
+	border: 1px solid rgba(175, 47, 47, 0.2);
+	padding: 5px;
+	border-radius: 3px;
+	cursor: pointer;
+	user-select: none;
+	position: absolute;
+	top: 20px;
+	right: 15px;
 }
 
 .todo-list {
@@ -191,7 +205,9 @@ body {
 	padding: 12px 16px;
 	margin: 0 0 0 43px;
 }
-
+.todo-list .view{
+	position: relative;
+}
 .todo-list li.editing .view {
 	display: none;
 }
@@ -236,6 +252,24 @@ body {
 	transition: color 0.4s;
 	font-weight: 400;
 	color: #484848;
+}
+
+.tag-box{
+	width: 50px;
+	height: 100%;
+	top: 0;
+	right: 50px;
+	overflow: hidden;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.tag-box span{
+	display: block;
+	font-size: 14px;
+	opacity: 0.9;
+	align-self: center;
 }
 
 .todo-list li.completed label {

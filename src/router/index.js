@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Tags from '../views/Tags.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes = [
     path: '/completed',
     name: 'completed',
     component: Home
+  },
+  {
+    path: '/tags',
+    name: 'tags',
+    component: Tags
   }
 ]
 
